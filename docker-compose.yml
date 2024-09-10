@@ -1,0 +1,13 @@
+version: "3.8"
+# services / containers
+services:
+  # express app
+  demo-four-walls:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demo-four-walls
+    image: demo-four-walls:0.0.1
+    restart: always
+    ports:
+      - 3041:3000
