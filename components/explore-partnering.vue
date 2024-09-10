@@ -19,7 +19,7 @@
                 <IconsUsers height="70" class="mx-auto" />
                 <div class="text-h6">{{ p.title }}</div>
                 <div class="text-center">{{ p.subtitle }}</div>
-                <v-btn color="red-darken-2" min-width="200">{{ p.action }}</v-btn>
+                <v-btn :color="p.color" min-width="200" rounded="0">{{ p.action }}</v-btn>
               </div>
             </v-responsive>
           </v-hover>
@@ -36,17 +36,20 @@ const partners = [
     title: "Qualified Agents",
     subtitle: "Are you a Real Estate Agent. Do you want to Sell or Rent your clients property through us .",
     action: "Partner with us",
-    icon: 'icons-users'
+    icon: 'icons-users',
+    color: 'teal-accent-2'
   },
   {
     title: "As a Property Developer",
     subtitle: "Do your have a property to buy or sell . We will help you find a reliable Tenant / Buyer.",
-    action: "Enquire Now"
+    action: "Enquire Now",
+    color: 'light-blue-darken-1'
   },
   {
     title: "As an Owner",
     subtitle: "Do your have a property to buy or sell . We will help you find a reliable Tenant / Buyer.",
-    action: "List Now"
+    action: "List Now",
+    color: 'grey-darken-1'
   }
 ]
 

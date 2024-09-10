@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: demo-four-walls
-    image: demo-four-walls:0.0.3
+    image: demo-four-walls:0.0.4
     restart: always
     ports:
       - 3041:3000
