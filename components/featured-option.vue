@@ -5,20 +5,22 @@
       <span>FEATURED OPTIONS</span>
     </div>
     <div class="featured-title text-h3 text-center mt-6">Our New Homes For Sale and Rent</div>
-    <div class="featured-sub-title text-center text-grey-darken-1 mt-6">OUR PORTFOLIO INCLUDES
+    <div class="featured-sub-title text-center text-grey-darken-1 mt-6">
+      OUR PORTFOLIO INCLUDES
       HIGH-QUALITY
       VILLAS, SPACIOUS
       APARTMENTS,
       AND THOUGHTFULLY
       DESIGNED
-      TOWNHOUSES.</div>
+      TOWNHOUSES.
+    </div>
 
     <v-row justify="center" class="my-6">
       <template v-for="(img, i) in images" :key="i">
         <v-col cols="12" md="5">
           <v-hover v-slot:default="{ isHovering, props }">
             <v-responsive class="rounded fade-in-up">
-              <v-img :src="img.url" cover aspect-ratio="9/16" style="height: 100%;">
+              <v-img :src="img.url" cover aspect-ratio="0.65" style="height: 100%;">
                 <div v-bind="props" :style="[
                   isHovering ? 'background-color: rgba(0, 0, 0, 0.0)' : 'background-color: rgba(0, 0, 0, 0.3)',
                   'transition: background-color 0.3s ease'
@@ -56,13 +58,3 @@ const images = [
 ]
 
 </script>
-
-<style scoped>
-.featured-title {
-  font-family: 'DM Serif Display';
-}
-
-.featured-sub-title {
-  letter-spacing: 5px;
-}
-</style>

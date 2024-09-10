@@ -10,6 +10,7 @@
             <FeaturedOption />
             <Residential />
             <Commertial />
+            <ExploreLocation />
         </v-container>
     </div>
 </template>
@@ -62,5 +63,13 @@ onMounted(() => {
 .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.featured-title {
+    font-family: 'DM Serif Display';
+}
+
+.featured-sub-title {
+    letter-spacing: 5px;
 }
 </style>
