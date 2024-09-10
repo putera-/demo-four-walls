@@ -4,7 +4,7 @@
       <IconsOffice height="17" />
       <span>EXPLORE PARTNERING</span>
     </div>
-    <div class="featured-title text-h3 text-center mt-6">Become Our Partner</div>
+    <div class="featured-title text-h4 text-md-h3 text-center mt-6">Become Our Partner</div>
 
     <div class="featured-sub-title text-center text-grey-darken-1 mt-6">
       EXPLORE DIVERSE NEIGHBORHOODS, EACH OFFERING UNIQUE AMENITIES AND LIFESTYLE OPPORTUNITIES.
@@ -14,8 +14,8 @@
       <template v-for="(p, i) in partners" :key="i">
         <v-col cols="12" md="4">
           <v-hover v-slot:default="{ isHovering, props }">
-            <v-responsive aspect-ratio="1.2" class="fade-in-up">
-              <div class="d-flex flex-column justify-space-between align-center fill-height">
+            <v-responsive aspect-ratio="1.2">
+              <div class="d-flex flex-column justify-space-between align-center fill-height fade-in-up">
                 <IconsUsers height="70" class="mx-auto" />
                 <div class="text-h6">{{ p.title }}</div>
                 <div class="text-center">{{ p.subtitle }}</div>

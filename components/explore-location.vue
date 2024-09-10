@@ -4,7 +4,7 @@
       <IconsOffice height="17" />
       <span>EXPLORE LOCATION</span>
     </div>
-    <div class="featured-title text-h3 text-center mt-6">“Discover the Best Locations around the Globe</div>
+    <div class="featured-title text-h4 text-md-h3 text-center mt-6">“Discover the Best Locations around the Globe</div>
 
     <div class="featured-sub-title text-center text-grey-darken-1 mt-6">
       EXPLORE DIVERSE NEIGHBORHOODS, EACH OFFERING UNIQUE AMENITIES AND LIFESTYLE OPPORTUNITIES.

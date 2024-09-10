@@ -4,7 +4,7 @@
       <IconsOffice height="17" />
       <span>FEATURED OPTIONS</span>
     </div>
-    <div class="featured-title text-h3 text-center mt-6">Our New Homes For Sale and Rent</div>
+    <div class="featured-title text-h4 text-md-h3 text-center mt-6">Our New Homes For Sale and Rent</div>
     <div class="featured-sub-title text-center text-grey-darken-1 mt-6">
       OUR PORTFOLIO INCLUDES
       HIGH-QUALITY

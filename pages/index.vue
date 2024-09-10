@@ -6,7 +6,7 @@
 
 
     <div style="min-height: 100vh; position: relative; z-index: 2; background-color: #fff; margin-top: 100vh;">
-        <v-container class="mx-auto px-16" style="max-width: 1200px; ">
+        <v-container class="mx-auto px-4 medium:px-16" style="max-width: 1200px; ">
             <FeaturedOption />
             <Residential />
             <Commertial />
