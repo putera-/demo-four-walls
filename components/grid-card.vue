@@ -13,8 +13,8 @@
             </div>
 
             <div class="d-flex flex-row justify-space-between">
-              <div>More Details</div>
-              <IconsPlay height="20" />
+              <div class="text-caption font-weight-light">MORE DETAILS</div>
+              <IconsPlay height="18" />
             </div>
           </div>
         </div>

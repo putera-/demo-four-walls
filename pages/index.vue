@@ -6,8 +6,10 @@
 
 
     <div style="min-height: 100vh; position: relative; z-index: 2; background-color: #fff; margin-top: 100vh;">
-        <Residential />
-        <Commertial />
+        <v-container class="mx-auto px-16" style="max-width: 1200px; ">
+            <Residential />
+            <Commertial />
+        </v-container>
     </div>
 </template>
 
