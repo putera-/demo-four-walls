@@ -11,6 +11,7 @@
             <Residential />
             <Commertial />
             <ExploreLocation />
+            <ExplorePartnering />
         </v-container>
     </div>
 </template>
