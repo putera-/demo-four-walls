@@ -1,7 +1,7 @@
 <template>
   <v-hover v-slot:default="{ isHovering, props }">
     <v-responsive class="rounded">
-      <v-img :src="image" cover aspect-ratio="1" style="height: 100%;">
+      <v-img :src="image" cover aspect-ratio="1" style="height: 100%;" class="fade-in-up">
         <div v-bind="props" :style="[
           isHovering ? 'background-color: rgba(0, 0, 0, 0.0)' : 'background-color: rgba(0, 0, 0, 0.3)',
           'transition: background-color 0.3s ease'
@@ -27,6 +27,6 @@
 defineProps<{
   image: String
   properties_name: String
-  properties_count: number
+  properties_count: String
 }>();
 </script>

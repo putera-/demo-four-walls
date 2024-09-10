@@ -17,7 +17,7 @@
       <template v-for="(img, i) in images" :key="i">
         <v-col cols="12" md="5">
           <v-hover v-slot:default="{ isHovering, props }">
-            <v-responsive class="rounded">
+            <v-responsive class="rounded fade-in-up">
               <v-img :src="img.url" cover aspect-ratio="9/16" style="height: 100%;">
                 <div v-bind="props" :style="[
                   isHovering ? 'background-color: rgba(0, 0, 0, 0.0)' : 'background-color: rgba(0, 0, 0, 0.3)',
