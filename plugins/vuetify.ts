@@ -6,7 +6,17 @@ import { createVuetify } from 'vuetify'
 
 export default defineNuxtPlugin((app) => {
     const vuetify = createVuetify({
-        // ... your configuration
+        ssr: true,
+        theme: {
+            defaultTheme: 'light'
+        },
+        defaults: {
+            global: {
+                font: {
+                    family: 'Roboto',
+                }
+            }
+        }
     })
     app.vueApp.use(vuetify)
 })
