@@ -19,7 +19,7 @@
                 <IconsUsers height="70" class="mx-auto" />
                 <div class="text-h6">{{ p.title }}</div>
                 <div class="text-center">{{ p.subtitle }}</div>
-                <v-btn color="red-darken-2" max-width="200">{{ p.action }}</v-btn>
+                <v-btn color="red-darken-2" min-width="200">{{ p.action }}</v-btn>
               </div>
             </v-responsive>
           </v-hover>
