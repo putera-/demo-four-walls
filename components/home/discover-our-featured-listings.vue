@@ -16,10 +16,9 @@
                 <v-col cols="12" md="4">
                     <v-hover v-slot:default="{ isHovering, props }">
                         <v-responsive class="rounded">
-                            <!-- class="fade-in-up" -->
-                            <v-img :src="img.url" cover aspect-ratio="1.3" style="height: 100%;">
+                            <v-img :src="img.url" cover aspect-ratio="1.3" style="height: 100%;" class="fade-in-up">
                                 <div v-bind="props" :style="[
-                                    isHovering ? 'background-color: rgba(0, 0, 0, 0.0)' : 'background-color: rgba(0, 0, 0, 0.3)',
+                                    isHovering ? 'background-color: rgba(0, 0, 0, 0.0)' : 'background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)',
                                     'transition: background-color 0.3s ease'
                                 ]" class="fill-height px-4 py-4 text-white font-weight-light">
                                     <div class="d-flex flex-column justify-space-between fill-height">
@@ -27,7 +26,7 @@
                                             <v-badge v-if="img.featured" color="success" content="FEATURED" inline
                                                 rounded="0" />
                                         </div>
-                                        <div>
+                                        <div class="d-flex flex-column ga-1">
                                             <v-badge color="black" content="FOR RENT" inline rounded="0"
                                                 class="badge-opacity" />
                                             <div class="text-h5 font-weight-bold">{{ img.price }}</div>
@@ -36,26 +35,31 @@
                                                 <div class="d-flex ga-3">
                                                     <div class="d-flex ga-1 align-center">
                                                         <v-icon icon="mdi-bed-king-outline" />
-                                                        <div> {{ img.facility.bed }}</div>
+                                                        <div class="font-weight-medium text-body-2"> {{ img.facility.bed
+                                                            }}</div>
                                                     </div>
                                                     <div class="d-flex ga-1 align-center">
                                                         <IconsShower height="18" />
-                                                        <div> {{ img.facility.shower }}</div>
+                                                        <div class="font-weight-medium text-body-2"> {{
+                                                            img.facility.shower }}</div>
                                                     </div>
                                                     <div class="d-flex ga-1 align-center">
                                                         <IconsCar height="18" />
-                                                        <div> {{ img.facility.car_park }}</div>
+                                                        <div class="font-weight-medium text-body-2"> {{
+                                                            img.facility.car_park }}
+                                                        </div>
                                                     </div>
                                                     <div class="d-flex ga-1 align-center">
                                                         <IconsRullerTriangle height="18" />
-                                                        <div> {{ img.facility.area }}</div>
+                                                        <div class="font-weight-medium text-body-2">{{ img.facility.area
+                                                            }}</div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex ga-1">
                                                     <v-btn density="compact" icon="mdi-arrow-expand" color="black"
-                                                        class="btn-opacity rounded-sm" />
+                                                        class="btn-opacity rounded" />
                                                     <v-btn density="compact" icon="mdi-heart-outline" color="black"
-                                                        class="btn-opacity rounded-sm" />
+                                                        class="btn-opacity rounded" />
                                                 </div>
                                             </div>
                                         </div>
